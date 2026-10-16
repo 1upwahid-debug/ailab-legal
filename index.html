@@ -3,19 +3,136 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Lab Scheduler</title>
+<title>AI Lab Scheduler – Plan, schedule and publish short-form video</title>
+<meta name="description" content="AI Lab Scheduler plans, schedules and publishes short-form video to TikTok, YouTube, Facebook and Instagram from one calendar, and tracks basic post performance.">
+<link rel="canonical" href="https://ailabscheduler.com/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#FE2C55">
+<meta property="og:title" content="AI Lab Scheduler">
+<meta property="og:description" content="Plan, schedule and publish short-form video to TikTok, YouTube, Facebook and Instagram from one calendar.">
+<meta property="og:url" content="https://ailabscheduler.com/">
+<meta property="og:image" content="https://ailabscheduler.com/icon-512.png">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 48px 16px; line-height: 1.6; color: #222; background: #fff; }
-  a { color: #0b62d6; }
+  :root { --red: #FE2C55; --ink: #16181d; --muted: #5b616e; --line: #e7e8ec; --soft: #f7f7f9; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink); background: #fff; line-height: 1.6; }
+  a { color: var(--red); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+  .brand img { width: 32px; height: 32px; border-radius: 7px; }
+  header nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-size: .95rem; }
+  header nav a:hover { color: var(--ink); }
+
+  .hero { padding: 80px 0 64px; }
+  .eyebrow { display: inline-block; color: var(--red); font-weight: 600; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.12; margin: 0 0 18px; max-width: 760px; letter-spacing: -.02em; }
+  .lede { font-size: 1.15rem; color: var(--muted); max-width: 640px; margin: 0 0 28px; }
+  .platforms { display: flex; flex-wrap: wrap; gap: 8px; }
+  .platforms span { border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px; font-size: .9rem; background: var(--soft); }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; max-width: 640px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .card { border: 1px solid var(--line); border-radius: 12px; padding: 22px; background: #fff; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .97rem; }
+  .num { display: inline-flex; width: 28px; height: 28px; border-radius: 8px; background: var(--red); color: #fff; font-weight: 700; font-size: .9rem; align-items: center; justify-content: center; margin-bottom: 12px; }
+
+  .who { background: var(--soft); }
+  .who ul { margin: 0; padding-left: 20px; columns: 2 260px; column-gap: 40px; }
+  .who li { margin-bottom: 10px; break-inside: avoid; }
+
+  .data p { max-width: 720px; }
+
+  footer { background: var(--ink); color: #c9ccd3; padding: 40px 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; }
+  .legal { display: flex; flex-wrap: wrap; gap: 12px; }
+  .legal a { color: #fff; text-decoration: none; font-weight: 600; border: 1px solid #3a3d46; border-radius: 8px; padding: 10px 18px; }
+  .legal a:hover { border-color: var(--red); background: var(--red); }
+  footer small { display: block; color: #8b8f99; }
+  footer small a { color: #c9ccd3; }
+
+  @media (max-width: 520px) { header nav { display: none; } .hero { padding: 56px 0 44px; } }
 </style>
 </head>
 <body>
-<h1>AI Lab Scheduler</h1>
-<p>AI Lab Scheduler is a social media scheduling and publishing application developed by AI Lab. It connects to TikTok, YouTube, Facebook and Instagram accounts to plan, schedule and publish short-form video content and track basic post performance.</p>
-<ul>
-  <li><a href="privacy.html">Privacy Policy</a></li>
-  <li><a href="terms.html">Terms of Service</a></li>
-</ul>
-<p>Contact: <a href="mailto:abdi.auf1999@gmail.com">abdi.auf1999@gmail.com</a></p>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="apple-touch-icon.png" alt="">AI Lab Scheduler</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#who">Who it's for</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Social video scheduling</span>
+      <h1>Plan once. Publish short-form video everywhere, on time.</h1>
+      <p class="lede">AI Lab Scheduler is a social media scheduling and publishing tool from AI Lab. Connect your TikTok, YouTube, Facebook and Instagram accounts, put your videos on one calendar, and they go out at the times you choose.</p>
+      <div class="platforms"><span>TikTok</span><span>YouTube</span><span>Facebook</span><span>Instagram</span></div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>What it does</h2>
+      <p class="sub">Everything a small content team needs to keep a daily posting schedule without logging into four apps.</p>
+      <div class="grid">
+        <div class="card"><div class="num">1</div><h3>Connect your accounts</h3><p>Sign in to each platform with its official login. You choose which accounts to connect and can disconnect them at any time.</p></div>
+        <div class="card"><div class="num">2</div><h3>Schedule from one calendar</h3><p>Upload a video, write the caption and hashtags, pick the platforms and a time. Queue a week of posts in one sitting.</p></div>
+        <div class="card"><div class="num">3</div><h3>Publish automatically</h3><p>At the scheduled time, posts are sent through each platform's official API, with no copy-pasting between apps.</p></div>
+        <div class="card"><div class="num">4</div><h3>Track how posts perform</h3><p>See basic results such as views and likes next to each post, so you know what to make more of.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="who" class="who">
+    <div class="wrap">
+      <h2>Who it's for</h2>
+      <p class="sub">Built for creators and small teams that publish short-form video every day.</p>
+      <ul>
+        <li><strong>Creators running video series</strong> who post a new episode on a fixed daily schedule.</li>
+        <li><strong>Small brands and shops</strong> that promote products with short videos across several networks.</li>
+        <li><strong>Social media managers</strong> handling a handful of accounts for one business.</li>
+        <li><strong>Anyone tired of posting by hand</strong> to four apps at the same time every night.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="data">
+    <div class="wrap">
+      <h2>Your accounts, your content</h2>
+      <p>You keep ownership of everything you upload. AI Lab Scheduler only uses your connected accounts to do what you ask: publish the posts you scheduled and show you how they performed. You can revoke access at any time from the app or from each platform's settings. Full details are in our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
+      <p>Access is currently limited to users authorized by AI Lab. Questions? Email <a href="mailto:abdi.auf1999@gmail.com">abdi.auf1999@gmail.com</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong style="color:#fff">AI Lab Scheduler</strong>
+      <small>&copy; 2026 AI Lab · <a href="mailto:abdi.auf1999@gmail.com">abdi.auf1999@gmail.com</a></small>
+    </div>
+    <nav class="legal" aria-label="Legal">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>
